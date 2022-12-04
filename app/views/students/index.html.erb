@@ -23,12 +23,11 @@
           <td><%= student.teacher %></td>
           <td><%= student.school %></td>
           <td><%= student.language %></td>
-          <td><%= link_to 'Show', student %></td>
-          <td><%= link_to 'Edit', edit_student_path(student) %></td>
-          <td><%= link_to 'Destroy', student,
-          method: :delete, data: {confirm: 'Are you sure?'}%></td>
+          <td><%= link_to t('action.show'), student %></td>
+          <td><%= link_to t('action.edit'), edit_student_path(student) %></td>
+          <td><%= link_to t('action.delete'), student, method: :delete, data: {confirm: t('action.sure')}%></td>
         </tr>
     <% end %>
   </tbody>
 </table>
-<%= link_to 'New Student', new_student_path, class:"btn btn-secondary my-button" %>
+<%= link_to t('button.new_student'), new_student_path, class:"btn btn-secondary my-button" %>

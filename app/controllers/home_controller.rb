@@ -5,7 +5,7 @@ class HomeController < ApplicationController
     @students = Student.where(dorm: 'true')
   end
   def teachers
-    @students = Student.where("experience > ?", 2)
+    @students = Student.where("experience >= ?", 24)
   end
   def pedagogical
     @students = Student.where("school LIKE ?", '%Pedagogical%')

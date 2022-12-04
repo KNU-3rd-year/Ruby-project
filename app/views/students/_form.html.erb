@@ -12,27 +12,35 @@
   <% end %>
 
   <div class="field form-group">
-    <%= form.label :name, style: "display: block" %>
+    <p>Student name</p>
     <%= form.text_field :name, class:"form-control" %>
   </div>
 
   <div class="field form-group">
-    <%= form.label :dorm, style: "display: block" %>
-    <%= form.check_box :dorm, class:"form-control" %>
+    <table>
+      <tr>
+        <td>Need a dormitory</td>
+        <td><%= form.check_box :dorm, class:"form-control" %></td>
+      </tr>
+    </table>
   </div>
 
   <div class="field form-group">
-    <%= form.label :experience, style: "display: block" %>
+    <p>Experience (in month)</p>
     <%= form.number_field :experience, class:"form-control" %>
   </div>
 
   <div class="field form-group">
-    <%= form.label :teacher, style: "display: block" %>
-    <%= form.check_box :teacher, class:"form-control" %>
+    <table>
+      <tr>
+        <td>Is a teacher</td>
+        <td><%= form.check_box :teacher, class:"form-control" %></td>
+      </tr>
+    </table>
   </div>
 
   <div class="field form-group">
-    <%= form.label :school, style: "display: block" %>
+    <p>School / Institution</p>
     <%= form.text_field :school, class:"form-control" %>
   </div>
 

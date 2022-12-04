@@ -7,3 +7,10 @@ ua:
     teacher: "Працював вчителем"
     school: "Школа"
     language: "Мова"
+  button:
+    new_student: "Додати студента"
+  action:
+    show: "Детальніше"
+    edit: "Редагувати"
+    delete: "Видалити"
+    sure: "Ви впевненні?"

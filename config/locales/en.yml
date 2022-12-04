@@ -38,3 +38,10 @@ en:
     teacher: "Teacher"
     school: "School"
     language: "Language"
+  button:
+    new_student: "Add student"
+  action:
+    show: "Show"
+    edit: "Edit"
+    delete: "Delete"
+    sure: "Are you sure?"
