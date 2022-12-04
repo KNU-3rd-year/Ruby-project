@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+
+<br class="jumbotron">
+  <h1 class="display-4">
+    <%= @student.name %>
+  </h1>
+  <p class="lead">
+    <%= if @student.dorm then "Requires dorm" else "Does not require dorm" end%>  |
+    <%= @student.experience.to_s + " years of experience" %>  |
+    <%= if @student.teacher then "Is a teacher" else "Isn't a teacher" end %> |
+    <%= @student.school %> |
+    <%= @student.language %>
+
+  </p>
+  <br/>
+
+  <%= link_to "Edit this student", edit_student_path(@student), class:"btn btn-secondary my-button" %>
+  <br/>
+  <%= link_to "Back to students", students_path, class:"btn btn-secondary my-button" %>
+  <br/>
+  <%= button_to "Destroy this student", @student, method: :delete, class:"btn btn-secondary my-button" %>
+
+</div>

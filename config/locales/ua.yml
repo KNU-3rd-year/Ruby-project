@@ -1,0 +1,9 @@
+ua:
+  students:
+    list:  "Список студентів"
+    name: "Ім'я"
+    dormitory: "Гуртожиток"
+    experience: "Стаж"
+    teacher: "Працював вчителем"
+    school: "Школа"
+    language: "Мова"

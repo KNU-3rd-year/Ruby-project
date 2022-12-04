@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Students</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to "Students", students_path, class:"nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Add student", new_student_path, class:"nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Require dorm", home_dormitory_path, class:"nav-link" %>
+      </li>
+      <li class="Teachers">
+        <%= link_to "Teachers", home_teachers_path, class:"nav-link" %>
+      </li>
+      <li class="Pedagogical">
+        <%= link_to "Pedagogical", home_pedagogical_path, class:"nav-link" %>
+      </li>
+      <li class="Groups">
+        <%= link_to "Groups", home_groups_path, class:"nav-link" %>
+      </li>
+      <li class="UA">
+        <%= link_to "UA", root_path(locale: :ua), class:"nav-link" %>
+      </li>
+      <li class="EN">
+        <%= link_to "EN", root_path(locale: :en), class:"nav-link" %>
+      </li>
+    </ul>
+  </div>
+</nav>
